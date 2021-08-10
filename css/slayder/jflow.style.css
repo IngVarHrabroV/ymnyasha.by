@@ -1,0 +1,94 @@
+/* 
+
+jFlow Plus Demo CSS 
+
+Description: Demonstation CSS for jFlow Plus
+Creator: Devin Walker
+Date: July 29, 2010
+
+
+*/
+
+#container {
+	width: 1080px;
+	height: 400px;
+	position: relative;
+	border-top: 5px solid #999;
+	border-bottom: 5px solid #999;
+	margin: 0 auto;
+}
+
+#slide1 img, #slide2 img, #slide3 img {
+	height: 400px;
+	width: 1080px;
+}
+
+#slide1 span, #slide2 span, #slide3 span {
+	display: none;
+	width: 1080px;
+	background: url("../../images/slayder/contentBg.png") repeat top left transparent;
+	position: absolute;
+	bottom: 10px;
+	right: 0px;
+	padding: 10px;
+}
+
+#slide1 h3, #slide2 h3, #slide3 h3 {
+	font-family: Arial, serif;
+	color: #FFF;
+	font-size: 35px;
+	font-style: italic;
+	margin: 0 0 10px 0;
+	text-align: left;
+}
+
+#slide1 p, #slide2 p, #slide3 p {
+	font-family: Georgia, serif;
+	color: #FFF;	
+	margin: 0;
+	text-align: left;
+}
+
+.jFlowSlideContainer a {
+	color: #F90;
+	text-decoration: none;
+	font-style: italic;
+}
+
+.jFlowSlideContainer a:hover {
+	text-decoration: none;
+	border-bottom: 1px dotted white;
+}
+
+.jFlowSlideContainer a:focus {
+	position: relative;
+	top: 1px;
+}
+
+.jFlowNext div {
+	background:url("../../images/slayder/arrows.png") no-repeat scroll 0 -35px transparent;
+	height:130px;
+	position:absolute;
+	top:125px;
+	right: -50px;
+	width:50px;
+	cursor:pointer;
+}
+
+.jFlowPrev div {
+	background:url("../../images/slayder/arrows.png") no-repeat scroll -84px -35px transparent;
+	height:130px;
+	position:absolute;
+	top:125px;
+	left: -50px;
+	width:50px;
+	cursor:pointer;
+}
+
+.jFlowPrev div:hover {
+	background-position: -84px -235px;
+}
+
+.jFlowNext div:hover {
+	background-position: 0px -235px;
+}

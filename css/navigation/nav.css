@@ -1,0 +1,156 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline; }
+
+
+ol, ul {
+  list-style: none; }
+
+
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+
+
+nav {
+  width: 1080px;
+}
+
+nav ul {
+  position: relative; }
+
+nav > ul:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  border-radius: 40%;
+  height: 40px;
+  bottom: 0;
+  left: 20%;
+  box-shadow: 0 0 10px rgba(28, 110, 126, 0.5);
+  z-index: -1; 
+}
+
+nav > ul:hover:after {
+  bottom: 5px;
+}
+
+nav.ph-lift1 {
+  text-align: center; 
+}
+ 
+nav.ph-lift1 ul {
+  display: inline-block; 
+}
+    
+nav.ph-lift1 ul:after {
+  box-shadow: 0 0 10px rgba(85, 107, 47, 0.5); 
+}
+  
+nav.ph-lift1 > ul > li {
+  float: left; 
+}
+  
+nav.ph-lift1 ul li {
+  width: 216px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 25px;
+  background: white;
+  -webkit-transition: all.6s ease;
+  -moz-transition: all.6s ease;
+  -o-transition: all.6s ease;
+  -ms-transition: all.6s ease;
+  transition: all.6s ease; 
+  box-shadow:
+      0 1px 4px rgba(0, 0, 0, .3),
+      -23px 0 20px -23px rgba(0, 0, 0, .8),
+      23px 0 20px -23px rgba(0, 0, 0, .8),
+      0 0 40px rgba(0, 0, 0, .1) inset;
+}
+
+nav.ph-lift1 ul li ul li{
+  font-size: 20px;
+}
+
+nav.ph-lift1 ul li ul {
+  max-height: 0;
+  -webkit-transition: all.6s ease;
+  -moz-transition: all.6s ease;
+  overflow: hidden;
+  display: block; 
+}
+   
+nav.ph-lift1 ul li:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3) inset;
+  background: #EE2C2C; /* Цвет фона при наведении главного меню  */
+}
+
+nav.ph-lift1 ul li:hover ul {
+  max-height: 300px; 
+}
+	
+nav.ph-lift1 ul li a {
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+  text-shadow: 1px -1px 0 #CD2626;
+  color: #FF3030; /*  Цвет шрифта главного меню */
+  height: 50px; 
+}
+    
+nav.ph-lift1 ul li ul li a {
+  color: #EE3B3B; /* Цвет шрифта подменю  */
+}
+    
+nav.ph-lift1 ul li ul li:hover {
+  background: #FF4040; /* Цвет фона при наведении подменю  */
+}
+
+nav.ph-lift1 ul li a span {
+  -webkit-transition: all.6s ease;
+  -moz-transition: all.6s ease;
+  -o-transition: all.6s ease;
+  -ms-transition: all.6s ease;
+  transition: all.6s ease;
+  display: block;
+  padding: 0 20px;
+}
+
+nav.ph-lift1 ul li:hover > a span {
+  margin-top: -50px;
+  color: white; /* Цвет шрифта основного меню при наведении  */
+  text-shadow: 0 1px 2px  black;
+}
+
+nav.ph-lift1 ul li ul li:hover > a span {
+  margin-top: -50px;
+  color: white; /* Цвет шрифта подменю при наведении  */
+  text-shadow: 0 1px 2px  black;
+}
+
+nav.ph-lift1 ul li a span:after {
+  content: attr(data-title);
+  display: block;
+}
+
